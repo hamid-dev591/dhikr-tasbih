@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع أدعية وتسبيح وقراءة القرآن</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>موقع أدعية وتسبيح وقراءة القرآن</h1>
+    </header>
+
+    <main>
+        <!-- قسم التسبيح -->
+        <section id="tasbih">
+            <h2>التسبيح</h2>
+            <div class="card">
+                <h3>سبحان الله</h3>
+                <p>عدد التسبيحات: <span id="count1">0</span></p>
+                <button onclick="increment('count1')">تسبيح</button>
+            </div>
+            <div class="card">
+                <h3>الحمد لله</h3>
+                <p>عدد التسبيحات: <span id="count2">0</span></p>
+                <button onclick="increment('count2')">تسبيح</button>
+            </div>
+            <div class="card">
+                <h3>الله أكبر</h3>
+                <p>عدد التسبيحات: <span id="count3">0</span></p>
+                <button onclick="increment('count3')">تسبيح</button>
+            </div>
+        </section>
+
+        <!-- قسم قراءة القرآن -->
+        <section id="quran">
+            <h2>قراءة القرآن الكريم</h2>
+            <div class="quran-card">
+                <h3>سورة الفاتحة</h3>
+                <p class="quran-text">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>
+                    الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ<br>
+                    الرَّحْمَٰنِ الرَّحِيمِ<br>
+                    مَالِكِ يَوْمِ الدِّينِ<br>
+                    إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ<br>
+                    اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ<br>
+                    صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ
+                </p>
+            </div>
+            <div class="quran-card">
+                <h3>سورة الإخلاص</h3>
+                <p class="quran-text">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>
+                    قُلْ هُوَ اللَّهُ أَحَدٌ<br>
+                    اللَّهُ الصَّمَدُ<br>
+                    لَمْ يَلِدْ وَلَمْ يُولَدْ<br>
+                    وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ
+                </p>
+            </div>
+            <!-- يمكنك إضافة المزيد من السور هنا -->
+        </section>
+
+        <section id="quran-reader">
+            <h2>قراءة القرآن الكريم</h2>
+            <label for="surahSelect">اختر السورة:</label>
+            <select id="surahSelect">
+                <option value="fatiha">سورة الفاتحة</option>
+                <option value="ikhlas">سورة الإخلاص</option>
+                <!-- يمكنك إضافة المزيد من السور هنا -->
+            </select>
+            <div id="surahText" class="quran-text">
+                <!-- سيتم عرض نص السورة هنا -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 موقع أدعية وتسبيح وقراءة القرآن</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
